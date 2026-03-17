@@ -153,3 +153,58 @@ body {
     font-size: 0.8rem;
     font-weight: 700;
 }
+
+.dashboard-main {
+    padding: 1.5rem;
+    overflow-y: auto;
+}
+
+/* Grid responsivo: 4 cols en escritorio, menos en pantallas más pequeñas */
+.stats-row {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.stat-card {
+    background: var(--white);
+    border-radius: var(--radius);
+    padding: 1.25rem 1.5rem;
+    box-shadow: var(--shadow);
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    border-top: 3px solid var(--primary);
+}
+
+.stat-card__label {
+    font-size: 0.8rem;
+    color: var(--grey);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.stat-card__value {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--primary);
+    line-height: 1;
+}
+
+.stat-card__trend {
+    font-size: 0.8rem;
+    font-weight: 700;
+}
+
+.trend--up {
+    color: #2E7D32;
+}
+
+.trend--down {
+    color: #C62828;
+}
+
+.trend--neutral {
+    color: var(--grey);
+}
