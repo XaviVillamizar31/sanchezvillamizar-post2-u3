@@ -208,3 +208,95 @@ body {
 .trend--neutral {
     color: var(--grey);
 }
+
+.content-row {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 1rem;
+}
+
+.card {
+    background: var(--white);
+    border-radius: var(--radius);
+    padding: 1.5rem;
+    box-shadow: var(--shadow);
+}
+
+.card__title {
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--primary);
+    margin-bottom: 1rem;
+}
+
+/* Tabla de proyectos */
+.project-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.9rem;
+}
+
+.project-table th,
+.project-table td {
+    padding: 0.6rem 0.75rem;
+    text-align: left;
+    border-bottom: 1px solid var(--border);
+}
+
+.project-table thead th {
+    font-weight: 700;
+    color: var(--primary);
+    background: var(--bg);
+}
+
+.project-table tbody tr:hover {
+    background: #F0F7FA;
+}
+
+/* Badges de estado */
+.badge {
+    padding: 2px 8px;
+    border-radius: 2rem;
+    font-size: 0.75rem;
+    font-weight: 700;
+}
+
+.badge--active {
+    background: #E8F5E9;
+    color: #2E7D32;
+}
+
+.badge--review {
+    background: #FFF8E1;
+    color: #F57F17;
+}
+
+.badge--done {
+    background: #E8F4F8;
+    color: #065A82;
+}
+
+/* Lista de actividad */
+.activity-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+
+.activity-item {
+    padding: 0.75rem 0;
+    border-bottom: 1px solid var(--border);
+    font-size: 0.88rem;
+    color: var(--text);
+}
+
+.activity-item:last-child {
+    border-bottom: none;
+}
+
+.activity-item::before {
+    content: "› ";
+    color: var(--secondary);
+    font-weight: 700;
+}
